@@ -1,2 +1,0 @@
-# PAL
-Physician Access Link
