@@ -9,7 +9,8 @@
         "linebreak-style": ["error", "windows"],
         "indent": "off",
         "react/jsx-indent": "off",
-        "react/jsx-indent-props": "off"
+        "react/jsx-indent-props": "off",
+        "no-param-reassign": ["error", { "props": false }]
     },
     "env": {
         "node": true,
