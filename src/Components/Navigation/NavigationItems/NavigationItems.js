@@ -1,13 +1,20 @@
 import React from 'react';
-import NavigationItem from './NavigationItem/NavigationItem'
-import classes from './NavigationItems.css'
+import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom'
+
 
 const navigationItems = () => {
     return (
-        <ul className={classes.NavigationItems}>
-            <NavigationItem link="/requestAccount" exact>Request Account</NavigationItem>
-            <NavigationItem link="/login">Sign In</NavigationItem>
-        </ul>
+        <div>
+            <Button 
+                component={Link} 
+                to="/requestAccount" 
+                variant="contained">Request Account</Button> 
+            <Button 
+                component={Link} 
+                to="/Login" 
+                color="inherit">Login</Button>             
+        </div>     
     );
 };
 
